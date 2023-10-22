@@ -1,0 +1,67 @@
+                        /* Paramètre général de mon css */
+
+                        @font-face {
+                            font-family: 'pantheraregular';
+                            src: url('/police/panthera-webfont.woff2') format('woff2'),
+                                 url('/police/panthera-webfont.woff') format('woff');
+                            font-weight: normal;
+                            font-style: normal;
+                        
+                        }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(
+        #11213F 100%,
+        #0B0B0B 100%,
+        #021740 83.76%,
+        #021740 0%);
+}
+
+                        /* Mise en page de la barre de navigation */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu ul {
+    display: flex;
+    margin-right: 90px;
+}
+
+.menu ul li { 
+    margin: 0 20px;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+
+}
+
+.logo {
+    margin-left: 110px;
+}
+
+                        /* Mise en page de la section Wakanda forever */
+            
+
+.wakanda-forever{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation--black-panther{
+    margin-left: 140px;
+}
+
+.presentation--black-panther h1 {
+    font-family: 'pantheraregular';
+    color: #9E91B7;
+}
