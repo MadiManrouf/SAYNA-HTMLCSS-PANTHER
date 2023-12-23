@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./accueil.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./scriptindex.js" defer></script>
     <title>Accueil</title>
 </head>
 <body>
@@ -62,18 +63,18 @@
         </header>
 
                                     <!-- section presentation -->
-        <section>
+        <section id="sec1-accueil">
             <div class="presentation">
                 <div class="text-presentation">
-                    <h1> BLACK PANTHER </h1>
-                    <h2> WAKANDA FOREVER </h2>
-                    <p class="description"> 
+                    <h1 class="fadeIn" id="titre1"> BLACK PANTHER </h1>
+                    <h2 class="fadeIn" id="titre2"> WAKANDA FOREVER </h2>
+                    <p class="description" class="fadeIn"> 
                     En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
                     hommage aux cultures africaine et afro-américaine. On y évoque le
                     racisme, la colonisation et les violences contre les afro-américains.
                     Ce film marque tout une génération,“c’est 100% africain et c’est parfait”.
                     </p>
-                    <a class="description" href="#"> Voir plus &gt; </a> 
+                    <a class="description" id="btn-to-prince-born" href="#birth"> Voir plus &gt; </a> 
                 </div>
                 <div class="image-presentation">
                     <img src="./Illustrations/Accueil/Pantherhome1..png">
@@ -87,16 +88,16 @@
     <main>
                                     <!-- acteur et actrice-->
         <section id="acteur">
-            <img src="./Illustrations/Accueil/Pantherhome2.png" id="killmonger">
+            <img class="zoom" src="./Illustrations/Accueil/Pantherhome2.png" id="killmonger">
             <div class="textacteur">
-                <h2>KILLMONGER</h2>
+                <h2 id="titre">KILLMONGER</h2>
                 <p>La sauvagerie de N'Jadaka alors qu'il servait dans une 
                     unité d'opérations noires de l'armée américaine lui a 
                     valu le surnom de Killmonger. D’origine Wakandaise, 
                     et se sentant abandoné par sa nation, il cherche à 
                     détroner T’Challa dans une quête vers le pourvoir.
                 
-                <br><a href="#">Voir plus ></a>
+                <br><a class="redirect" href="#">Voir plus ></a>
                 </p>
             </div>
             <img src="./Illustrations/Accueil/Pantherhome3.png" class="img">
@@ -122,7 +123,7 @@
         <section id="bio">
             <div class="bio">
                 <div class="naissance">
-                    <h2>
+                    <h2 id="birth">
                         Naissance d’un prince
                     </h2>
                     <p class="histoire">
@@ -216,7 +217,7 @@
                 <div class="right">
                     <div class="biographie">
                         <div class="image-bio">
-                            <img src="./Illustrations/Accueil/Pantherhome5.png">
+                            <img class="zoom" src="./Illustrations/Accueil/Pantherhome5.png">
                         </div>
                         <div class="nom">
                             T’Challa
@@ -245,7 +246,7 @@
                     </div>
 
                     <div class="tenue">
-                        <img src="./Illustrations/Accueil/Pantherhome6.png">
+                        <img class="zoom" src="./Illustrations/Accueil/Pantherhome6.png">
                     </div>
                 </div>
             </div>
@@ -304,5 +305,15 @@
             </div>
         </div>
     </footer>
+    <div class="popup-message">
+        <div class="popup-content">
+            <span class="message">OPERATION REUSSI !</span>
+        </div>
+    </div>
+    <div id="canvas-container">
+      <canvas id="canvas" width="1300" height="700"></canvas>
+    </div>
+    <script src="./assets/js/landing-script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

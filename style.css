@@ -37,6 +37,8 @@ html {
     font-size: 1vw;
     font-family: "Cantarell";
     margin-bottom: 3.66vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /*design header*/
@@ -230,4 +232,11 @@ section, #header {
 .footer .right-footer .suivre .suivre-page p a{
     text-decoration: none;
     color: var(--blanc);
+}
+/* canvas */
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
